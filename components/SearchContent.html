@@ -1,0 +1,59 @@
+<div class="search__elements">
+    <div class="row mb-3 px-2 py-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-4 ">
+            <div class="input-group input-group-lg">
+
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter Word...">
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg" id="SearchBtn"
+                onclick="SearchContent()">Search</button>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<div class="search__container">
+    <div class="empty__input">
+        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+            <h3 id="empty__input__text">Search For Word...</h3>
+        </div>
+    </div>
+    <div class="search__result rounded">
+        <div class="row py-2 border-bottom">
+            <div class="col-md-2"> Word </div>
+            <div class="col-sm-1"> : </div>
+            <div class="col-md-3" id="word"></div>
+            <div class="col-md-1"><i class="fa-solid fa-volume-high" id="volume__btn" onclick="playAudio()"></i></div>
+            <div class="col-md-5"></div>
+        </div>
+        <div class="row py-2 border-bottom">
+            <div class="col-md-2"> Part Of Speech </div>
+            <div class="col-md-1"> : </div>
+            <div class="col-md-9" id="partOfSpeech"></div>
+        </div>
+        <div class="row py-2 border-bottom">
+            <div class="col-md-2"> Definition </div>
+            <div class="col-md-1"> : </div>
+            <div class="col-md-9" id="definition"></div>
+        </div>
+        <div class="row py-2 border-bottom">
+            <div class="col-md-2"> Synonyms </div>
+            <div class="col-md-1"> : </div>
+            <div class="col-md-9" id="synonyms"></div>
+        </div>
+        <div class="row py-2 border-bottom">
+            <div class="col-md-2"> Antonyms </div>
+            <div class="col-md-1"> : </div>
+            <div class="col-md-9" id="antonyms"></div>
+        </div>
+        <div class="row py-2">
+            <div class="col-md-2"> Example </div>
+            <div class="col-md-1"> : </div>
+            <div class="col-md-9" id="example"></div>
+        </div>
+    </div>
+</div>

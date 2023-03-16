@@ -1,0 +1,24 @@
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 15%);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo {
+    background-image: url("../assets/icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 55px;
+}
+
+.nav_list {
+    display: flex;
+    padding-left: 70px;
+    width: 30%;
+    justify-content: space-between !important;
+}
