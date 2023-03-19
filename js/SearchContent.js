@@ -58,12 +58,17 @@ const getResult = async (input) => {
     searches = JSON.parse(localStorage.searches);
   }
 
-  searches.push({
-    word: data.word,
-    meaning: wordDefination,
-  });
+  const isDataExist = searches.some(
+    (search) => search.word === data.word.toLowerCase()
+  );
+  if (!isDataExist) {
+    searches.push({
+      word: data.word.toLowerCase(),
+      meaning: wordDefination,
+    });
 
-  localStorage.setItem("searches", JSON.stringify(searches));
+    localStorage.setItem("searches", JSON.stringify(searches));
+  }
 };
 
 const SearchContent = () => {
